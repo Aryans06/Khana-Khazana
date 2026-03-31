@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <Button variant="primary" size="xl">Destructive</Button>
+    <div>
+      
+    </div>
   );
 }
