@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pantry_items",
+  "info": {
+    "singularName": "pantry-item",
+    "pluralName": "pantry-items",
+    "displayName": "pantryItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "pantry_items"
+    }
+  }
+}
